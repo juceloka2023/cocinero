@@ -1,0 +1,15 @@
+<input type="file" name="files" webkitdirectory directory id="files" multiple />
+<script>
+var inp = document.getElementById("files");
+inp.addEventListener("change",function(ev){
+  //console.log(inp.files);
+  for (i = 0; i < inp.files.length; i++) {
+      let file = inp.files[i];
+      console.log(file.name, file.webkitRelativePath, file.size);
+
+  }
+  for (i = 0; i < inp.files.length; i++) {
+      console.log(inp.files[i]);
+  }
+});
+</script>

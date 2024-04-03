@@ -1,0 +1,856 @@
+html{
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+    background-image: repeating-linear-gradient(60deg, rgba(255, 0, 0, 0.25), rgba(255, 0, 0, 0.25) 10px,
+    rgba(0, 255, 0, 0.25) 10px, rgba(0, 255, 0, 0.25) 20px),
+    repeating-linear-gradient(120deg, rgba(255, 0, 0, 0.25), rgba(255, 0, 0, 0.25) 10px,
+    rgba(0, 255, 0, 0.25) 10px, rgba(0, 255, 0, 0.25) 20px),
+    repeating-linear-gradient(180deg, rgba(255, 0, 0, 0.25), rgba(255, 0, 0, 0.25) 10px,
+    rgba(0, 255, 0, 0.25) 10px, rgba(0, 255, 0, 0.25) 20px),
+    repeating-linear-gradient(-60deg, rgba(255, 0, 0, 0.25), rgba(255, 0, 0, 0.25) 10px,
+    rgba(0, 255, 0, 0.25) 10px, rgba(0, 255, 0, 0.25) 20px),
+    repeating-linear-gradient(-120deg, rgba(255, 0, 0, 0.25), rgba(255, 0, 0, 0.25) 10px,
+    rgba(0, 255, 0, 0.25) 10px, rgba(0, 255, 0, 0.25) 20px),
+    repeating-linear-gradient(-180deg, rgba(255, 0, 0, 0.25), rgba(255, 0, 0, 0.25) 10px,
+    rgba(0, 255, 0, 0.25) 10px, rgba(0, 255, 0, 0.25) 20px);
+    height:100vh;
+    position:relative;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    vertical-align: middle;
+    position: absolute;
+    width:100%;
+    margin:auto;
+    top:0;
+    background-color: transparent;
+}
+h1{
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(125, 255, 255), 0 0 0.2em rgb(125, 255, 255);
+    color: rgb(0, 225, 225);
+    animation: Escribir 5s infinite alternate;
+    animation-delay: 4s;
+} 
+@keyframes Escribir{
+    0%{
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(125, 255, 255), 0 0 0.2em rgb(125, 255, 255);
+        color: rgb(0, 225, 225);    
+    }
+    33%{
+        text-shadow: 1px 1px 2px  transparent, 0 0 1em  transparent, 0 0 0.2em transparent;
+        color: transparent;
+    }
+    100%{ 
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(125, 255, 255), 0 0 0.2em rgb(125, 255, 255);
+        color: rgb(0, 225, 225);    
+    }
+}
+.HeaConTituloPagina{
+    font-family: cursive;
+    font-size: 20px;
+    background-color: rgb(0, 0, 40);
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 50px,
+        rgba(0, 255, 251, 0.25) 50px, rgba(0, 255, 251, 0.25) 56px, transparent 56px, transparent 63px,
+        rgba(0, 255, 251, 0.25) 63px, rgba(0, 255, 251, 0.25) 69px, transparent 69px, transparent 116px,
+        rgba(0, 238, 255, 0.25) 116px, rgba(0, 238, 255, 0.25) 166px),
+    repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(0, 255, 251, 0.25) 50px,
+        rgba(0, 255, 251, 0.25) 56px, transparent 56px, transparent 63px, rgba(0, 255, 251, 0.25) 63px,
+        rgba(0, 255, 251, 0.25) 69px, transparent 69px, transparent 116px, rgba(0, 238, 255, 0.25) 116px,
+        rgba(0, 238, 255, 0.25) 166px),
+    repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(38, 87, 86, 0.25) 5px,
+        rgba(38, 87, 86, 0.25) 10px),
+    repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(38, 87, 86, 0.25) 5px,
+        rgba(38, 87, 86, 0.25) 10px);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+    border-image-width: auto ;
+    border-image-outset:0;
+    padding:5px 30px 5px 30px;
+    border-radius: 15px;
+    margin:10px auto;
+    position: relative;
+    width:fit-content;
+    /* letter-spacing: 2px; */
+    transform:scale(1.1,1);
+}
+.HeaConMenuPrimario{
+    position: relative;
+    width:100%;
+    padding-top:5px;
+    padding-bottom: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(0, 255, 255);
+    background-image: repeating-linear-gradient(72deg, transparent, transparent 10px, rgba(38, 87, 86, 0.75) 11px,
+        rgba(38, 87, 86, 0.25) 11px),
+        repeating-linear-gradient(144deg, transparent, transparent 10px, rgba(38, 87, 86, 0.75) 11px,
+        rgba(38, 87, 86, 0.25) 11px),
+        repeating-linear-gradient(216deg, transparent, transparent 10px, rgba(38, 87, 86, 0.75) 11px,
+        rgba(38, 87, 86, 0.25) 11px),
+        repeating-linear-gradient(288deg, transparent, transparent 10px, rgba(38, 87, 86, 0.75) 11px,
+        rgba(38, 87, 86, 0.25) 11px),
+        repeating-linear-gradient(360deg, transparent, transparent 10px, rgba(38, 87, 86, 0.75) 11px,
+        rgba(38, 87, 86, 0.25) 11px);
+}
+.HeaConMenu{
+    width:fit-content;
+    margin: 5px auto;
+    align-items: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.HeaConMenu ul{
+    display:flex;
+    flex-direction: row;
+    border:transparent 2px solid;
+    box-shadow: inset 0 0 5px 3px rgba(0, 0, 0,.8),0 0 5px 3px rgba(0, 0, 0,.8);
+    padding: 5px;
+    border-radius: 7px;
+    margin: 10px auto;
+    width: 100%;
+    align-items: center ;
+}
+.HeaConMenu ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    margin-top:7px;
+    margin-bottom:7px;
+    /*FONDO DEL BOTON*/
+    background-image: linear-gradient(to top, black,rgb(200,200,200));
+    /*SOMBRA DEL BOTON*/
+    box-shadow:5px 5px 5px rgba(0,0,0,1);
+}
+/**********************/
+/*Movimientos del menu*/
+/**********************/
+.HeaConMenu ul li:nth-of-type(1){
+    opacity: 0;
+    animation: BajaMenu1 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes BajaMenu1{
+    from{
+        transform:translatey(-30px);
+        opacity: 0;
+    }
+    to{
+        transform:translatey(0px);
+        opacity: 1;
+    }
+}
+.HeaConMenu ul li:nth-of-type(2){
+    opacity: 0;
+    animation: BajaMenu2 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes BajaMenu2{
+    from{
+        transform:translatey(-30px);
+        opacity: 0;
+    }
+    to{
+        transform:translatey(0px);
+        opacity: 1;
+    }
+}
+.HeaConMenu ul li:nth-of-type(3){
+    opacity: 0;
+    animation: BajaMenu3 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes BajaMenu3{
+    from{
+        transform:translatey(-30px);
+        opacity: 0;
+    }
+    to{
+        transform:translatey(0px);
+        opacity: 1;
+    }
+}
+.HeaConMenu ul li:nth-of-type(4){
+    opacity: 0;
+    animation: BajaMenu4 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes BajaMenu4{
+    from{
+        transform:translatey(-30px);
+        opacity: 0;
+    }
+    to{
+        transform:translatey(0px);
+        opacity: 1;
+    }
+}
+/***********************************************/
+.HeaConMenu ul li:hover{
+    /*FONDO DEL BOTON*/
+    background-image: linear-gradient(to top, black,rgb(200,200,200),black);
+    /*SOMBRA DEL BOTON*/
+    box-shadow:2.5px 2.5px 5px rgba(0,0,0,1);
+}
+.HeaConMenu ul li:active{
+    /*FONDO DEL BOTON*/
+    background-image: linear-gradient(to bottom, black,rgb(200,200,200));
+    /*SOMBRA DEL BOTON*/
+    box-shadow:0px 0px 0px rgba(0,0,0,1);
+}
+.HeaConMenu ul li a{
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-family: 'Electrolize', Regular;
+    font-size: 15px;
+    font-weight: 700;
+    color:white;
+    transition: .8s;
+}
+.HeaConMenu ul li a:hover{
+    color:rgb(255,255,100);
+    transition: .8s;
+}
+.HeaConMenu ul li a:active{
+    text-shadow: 0 0 5px rgba(255,255,100,.8);
+}
+.HeaBotMenu{
+    width:100px;
+    border:#000 1px double;
+    display:flex;
+    flex-direction:row;
+}
+/**************************/
+/*Cuerpo de la pagina HTML*/
+/**************************/
+.Cuerpo{
+    position:relative;
+    top:200px;
+    margin-bottom: 20px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.CueConPrimario{
+    display:flex;
+    flex-direction: row;
+    position:relative;
+    margin: 30px auto 30px auto;
+    width: 950px;
+    padding: 10px;
+    background-clip:padding-box;
+    box-shadow: inset 0 0 10px rgba(0,0,0,.75),0 0 10px rgba(0,0,0,.75);
+    border: 5px solid rgb(0, 80, 0);
+    border-radius: 15px;
+    animation: Neon-Verde 5s infinite;
+}
+@keyframes Neon-Verde{
+    0%,19%, 20.6%, 21%, 22.6%, 100% {
+        border: 5px solid rgb(150, 255, 150);
+        box-shadow:inset 0 0 5px rgba(150, 255, 150,1),0 0 5px rgba(150, 255, 150,1),0 0 7px rgba(150, 255, 150,1);   
+    }
+    20%, 20.5% , 22%, 22.5%{
+        border: 5px solid rgb(0, 80, 0);
+        box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.75),0 0 5px rgba(0, 0, 0, 0.75),0 0 7px rgba(0, 0, 0, 0.75);   
+    }
+}
+.CueFoto{
+    background-image: url('../Multimedia/Images/platovacio.jpg');
+    width:400px;
+    height:auto;
+    background-size:contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-position: center center;
+    background-color: rgb(255,255,255);
+    opacity:75%;
+    margin-left: 0px;
+    margin-right: auto;
+}
+.CueConGenTexto{
+    margin-left: auto;
+    margin-right: 0px;
+    border-radius: 10px;
+    height: fit-content;
+}
+.CueConTitulo{
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 100%;
+    align-content: center;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.75) , rgba(255,255,255,.75) 50%,rgba(0,0,0,.75) 100% );
+    /* animation: Cartel-Titulo-Recetas 5s infinite alternate ; */
+    margin-bottom: 10px;
+}
+.CueConTitulo h2{
+    width:fit-content;
+    font-family: Beau Rivage;
+    font-size: 40px;
+    margin: auto;
+    font-weight:bolder;
+    text-shadow:0px 0px 2px rgb(255, 255, 255);
+    /* animation: Cartel-Titulo-Recetas 5s infinite alternate steps(2); */
+    transform:scale(1.8,1)  
+}
+.CueConResenia{
+    width:500px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: repeating-linear-gradient(0deg,rgba(125, 125, 125,0.50),rgba(125, 125, 125,0.50) 50px, rgba(147, 143, 255,0.50) 51px,
+    rgba(147, 143, 255,0.50) 55px,rgba(255, 143, 143, 0.5) 56px,rgba(255, 143, 143, 0.5) 60px),
+    repeating-linear-gradient(90deg,rgba(125, 125, 125,0.50),rgba(125, 125, 125,0.50) 50px, rgba(147, 143, 255,0.50) 51px,
+    rgba(147, 143, 255,0.50) 55px,rgba(255, 143, 143, 0.5) 56px,rgba(255, 143, 143, 0.5) 60px);
+}    
+.CueConResenia p{
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    text-align: justify;
+    line-height:17px;
+    margin-bottom: 12px;
+    color:rgba(255,255,255,1);
+    text-shadow:0px 0px 2px rgb(0, 0, 0),  2px 3px 5px rgba(0,0,0,.75);    
+}
+/***********************/
+/*Pie de la pagina HTML*/
+/***********************/
+footer{
+    width:100%;
+    display:flex;
+    position: relative;
+    background: linear-gradient(to bottom,rgba(0,0,0,.90),rgba(50,50,50,.90) 50%,rgba(0,0,0,.90) 100% ) ;
+    margin-bottom: 0px;
+    margin-top:auto + 30px;
+    width:100%;
+    height:80px;
+    bottom:0px;
+    top:200px;
+}
+.FooAcercaDe{
+    margin:auto;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size: 9px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    word-spacing: 5px;
+    width: 250px ;
+    display: flex;
+    padding: 10px;
+    flex-wrap:wrap;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 5px rgba(255,255,255,.8),0 0 5px rgba(255,255,255,.8),0 0 5px rgba(255,255,255,.8);
+}
+.FooAcercaDe p, .FooAcercaDe p a{
+    text-decoration: none;
+    transform: scale(1.3,1);
+    color:white;
+}
+.FooAcercaDe p:nth-of-type(3), .FooAcercaDe p:nth-of-type(3) a{
+    animation: Cartel-AcercaDe-3 5s infinite;
+}
+@keyframes Cartel-AcercaDe-3{
+    0%{
+        color:white;
+        text-shadow: none;
+    }
+    10%{
+        color:yellow;
+        text-shadow: 0 0 5px rgba(255, 255, 150, 0.8),0 0 5px rgba(255, 255, 150,.8),0 0 5px rgba(255, 255, 150,.8);
+    }
+    20%{
+        color:white;
+        text-shadow: none;
+    }
+    100%{
+        color:white;
+        text-shadow: none;
+    }
+}
+.FooAcercaDe p:nth-of-type(4), .FooAcercaDe p:nth-of-type(4) a{
+    animation: Cartel-AcercaDe-4 5s infinite;
+}
+@keyframes Cartel-AcercaDe-4{
+    0%{
+        color:white;
+        text-shadow: none;
+    }
+    10%{
+        color:white;
+        text-shadow: none;
+    }
+    20%{
+        color:yellow;
+        text-shadow: 0 0 5px rgba(255, 255, 150, 0.8),0 0 5px rgba(255, 255, 150,.8),0 0 5px rgba(255, 255, 150,.8);
+    }
+    30%{
+        color:white;
+        text-shadow: none;
+    }
+    100%{
+        color:white;
+        text-shadow: none;
+    }
+}
+.FooIconos{
+    margin:auto;
+    font-size: 9px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-right:5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(255,255,255,.8),0 0 5px rgba(255,255,255,.8),0 0 5px rgba(255,255,255,.8);
+}
+.FooIconos .Fila1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    border-top-left-radius:inherit ;
+    border-top-right-radius:inherit ;
+    align-items: center;
+    text-align: center;
+    height: 15px;
+    color:black;
+    background: white;  
+}
+.FooIconos .Fila1 .Titulo{
+    width:100%;
+    border-top-left-radius:inherit ;
+    border-top-right-radius:inherit ;
+    color:black;
+    text-align: center;
+    align-items: center;
+    height: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight:bold;
+    transform:scale(1.5,1);  
+}
+.FooIconos .Fila2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin:5px 5px;
+}
+.FooIconos .Fila2 .FooRedes .Circulos{
+    display: block;
+    border-radius: 8px;
+    background: rgb(255,255,255);
+    width:30px;
+    height:30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color:black;
+    font-weight: 900;
+    text-align: center;
+    margin:0 2.5px;
+    transition: .5s;
+}
+.FooRedes:nth-of-type(1) .Circulos{
+    animation: FooBotonesContactar1 2s infinite;
+    animation-delay: 12s;
+}
+@keyframes FooBotonesContactar1{
+    0%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+    10%{
+        box-shadow: 0 0 5px rgba(255,255,200,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8);
+    }
+    20%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+}
+.FooRedes:nth-of-type(2) .Circulos{
+    animation: FooBotonesContactar2 2s infinite;
+    animation-delay: 12s;
+}
+@keyframes FooBotonesContactar2{
+    10%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+    20%{
+        box-shadow: 0 0 5px rgba(255,255,200,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8);
+    }
+    30%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+}
+.FooRedes:nth-of-type(3) .Circulos{
+    animation: FooBotonesContactar3 2s infinite;
+    animation-delay: 12s;
+}
+@keyframes FooBotonesContactar3{
+    20%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+    30%{
+        box-shadow: 0 0 5px rgba(255,255,200,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8);
+    }
+    40%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+}
+.FooRedes:nth-of-type(4) .Circulos{
+    animation: FooBotonesContactar4 2s infinite;
+    animation-delay: 12s;
+}
+@keyframes FooBotonesContactar4{
+    30%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+    40%{
+        box-shadow: 0 0 5px rgba(255,255,200,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8) ;
+    }
+    50%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+}
+.FooRedes:nth-of-type(5) .Circulos{
+    animation: FooBotonesContactar5 2s infinite;
+    animation-delay: 12s;
+}
+@keyframes FooBotonesContactar5{
+    40%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+    50%{
+        box-shadow: 0 0 5px rgba(255,255,200,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8);
+    }
+    60%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+}
+.FooRedes:nth-of-type(6) .Circulos{
+    animation: FooBotonesContactar6 2s infinite;
+    animation-delay: 12s;
+}
+@keyframes FooBotonesContactar6{
+    50%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+    60%{
+        box-shadow: 0 0 5px rgba(255,255,200,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8);
+    }
+    70%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+}
+.FooRedes:nth-of-type(7) .Circulos{
+    animation: FooBotonesContactar7 2s infinite;
+    animation-delay: 12s;
+}
+@keyframes FooBotonesContactar7{
+    60%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+    70%{
+        box-shadow: 0 0 5px rgba(255,255,200,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8),0 0 5px  rgba(255,255,200,.8);
+    }
+    80%{
+        box-shadow: 0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0),0 0 5px rgba(255,255,255,.0);
+    }
+}
+.FooIconos .Fila2 .FooRedes .Circulos:hover{
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0 0 5px rgb(255,255,255);
+    transition: .5s;
+}
+.FooIconos .Fila2 .FooRedes .TitRedes{
+    display: none;
+}
+.FooMenuIconos{
+    display:none;
+}
+/**********************************************************************************/
+/**********************************************************************************/
+/***     ****   *****   ***   ****    ***   *   *   ***   ***  *   *  *****     ***/
+/***     *   *  *      *      *   *  *   *  **  *  *       *   *   *  *         ***/
+/***     ****   ***     ***   ****   *   *  * * *   ***    *    * *   ***       ***/
+/***     * *    *          *  *      *   *  *  **      *   *    * *   *         ***/
+/***     *  *   *****   ***   *       ***   *   *   ***   ***    *    *****     ***/
+/**********************************************************************************/
+/**********************************************************************************/
+
+/*************************************************************/
+/*************************************************************/
+/*****     Cuando la resolución máxima es de 1000px      *****/
+/*************************************************************/
+/*************************************************************/
+@media screen and (max-width:1000px){  
+    /************************************/
+    /*****        ENCABEZADO        *****/
+    /************************************/
+    /************************************/
+    /*****          CUERPO          *****/
+    /************************************/   
+    .CueConPrimario{
+        display:flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    .CueFoto{
+        height:300px;
+        width:500px;
+        margin:0 auto 20px auto;
+        padding: 10px;
+        border-color: #000;
+        border-width: 2px;
+    }
+    .CueConGenTexto{
+        margin:auto auto 0 auto;
+    }
+    /************************************/
+    /*****           PIE            *****/
+    /************************************/  
+    footer{
+        height: 60px;
+    }
+    .FooAcercaDe{
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left:10px;
+        margin-right: auto;
+        border-radius: 10px;
+        width:400px;
+        height:22px;
+    }   
+    .FooIconos{
+        border-radius: 10px;
+    }
+    .FooIconos .Fila2 .FooRedes .Circulos{
+        border-radius: 5px;
+        width:20px;
+        height:20px;
+    }
+    .FooIconos .Fila1{
+        border-top-left-radius: 10px;
+        border-top-right-radius:10px;
+    }
+}
+/************************************************************/
+/************************************************************/
+/*****     Cuando la resolución máxima es de 650px      *****/
+/************************************************************/
+/************************************************************/
+@media screen and (max-width:650px){
+    /************************************/
+    /*****        ENCABEZADO        *****/
+    /************************************/
+    html, body{
+        overflow-x: hidden;
+    }
+    .HeaConTituloPagina{
+        border-radius: 1vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .HeaConTituloPagina h1{
+        font-size: 6vw; 
+    }
+    .HeaConMenuPrimario{
+        height:110px;
+    }
+    .HeaConMenu{
+        width: 250px;
+        height: 50px;
+    }    
+    .HeaConMenu ul{
+        width:100%;
+        display:flex;
+        flex-wrap: wrap;
+        align-content:stretch;
+    }
+    /************************************/
+    /*****          CUERPO          *****/
+    /************************************/
+    .Cuerpo{
+        margin-bottom: 30px;
+    }
+    .CueConPrimario{
+        margin:30px auto;
+        position:relative;
+        top:30px;
+        margin-bottom:30px ;
+    }
+    .CueFoto{
+        width:76.9230769231vw;
+        height:46.1538461538vw;
+    }
+    .CueConTitulo h2{
+        font-size: 6.1538461538vw;
+    }
+    .CueConResenia{
+        width:76.9230769231vw;
+    }
+    .CueConResenia p{
+        font-size: calc(3.0769230769vw /.8);
+    }
+    /************************************/
+    /*****           PIE            *****/
+    /************************************/ 
+    footer{
+        height:50px;
+        margin-bottom: 0px;
+        margin-top:30px;
+        padding-right: 0%;
+    }
+    .FooAcercaDe{
+        width: 200px;
+        margin-left:0%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        word-spacing: 0;
+    }
+    .FooAcercaDe p{
+        transform: scale(1,1);
+    }    
+    .FooIconos{
+        width:160px;
+        position:absolute;
+        overflow-y: auto;
+        right: 0%;
+        bottom: 50px ;
+        background-image:  linear-gradient(to left,rgba(0,0,0,1),rgba(50,50,50,1) 50%,rgba(0,0,0,1) 100% ) ;
+        border-radius: 5px 0px 0px 0px;
+        margin-right: 0;
+        box-shadow: none;
+        border-color: transparent;
+        overflow-x: hidden;
+        overflow-y: auto;    
+    }
+    .FooMenuIconos{
+        display: flex;
+        height:45px;
+        width:45px;
+        margin:auto 0px auto auto;
+        background-color: rgb(51, 51, 51);
+        border-radius: 5px;
+        border-color: white rgb(210, 210, 210) rgb(150, 150, 150) rgb(210, 210, 210);
+        border-width: 1px;
+        align-items: center;
+        align-content: center;        
+    }
+    .FooMenuBorders{
+        display: flex;
+        height: 30px;
+        width:30px;
+        border-radius: 50%;
+        border:rgb(140, 140, 140) .5px solid;
+        text-shadow:0px 0px 2px rgb(200, 200, 200);        
+        margin:auto;
+        padding: auto;
+        align-items: stretch;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-shadow: 0px 5px 5px rgb(0, 0, 0),0px -3px 5px rgb(184, 184, 184);
+    }
+    .FooMenuBorders p{
+        font-family: Beau Rivage;
+        font-size: 12px;
+        font-weight:bolder;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        vertical-align: middle;
+        text-align: center;
+        Margin:auto;
+        padding: auto;
+        width:auto;
+        height: auto;
+        top:20px;
+    }
+    .FooIconos .Fila1{
+        border-top-left-radius: inherit ;
+        border-top-right-radius: inherit;
+    }
+    .FooIconos .Fila2{
+        flex-direction: column;
+        width:100%;
+    }
+    .FooIconos .Fila2 .FooRedes{
+        display: flex;
+        flex-direction: row;
+        width: 95%  ;
+        justify-content:space-between;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+    }
+    .FooIconos .Fila2 .FooRedes .TitRedes{
+        position: relative;        
+        display:flex;
+        text-decoration: none;
+        background-color: transparent;
+        color: white;
+        border-radius: 5px;
+        border: #fff 1px solid;        
+        font-family:'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight:bold;
+        transform:scale(1.5,1);
+        font-size: 12px;        
+        padding: 3px 5px;
+        margin:2px auto 2px 20px;
+        transition: .5s;       
+    }
+    .FooIconos .Fila2 .FooRedes .TitRedes:hover{
+        box-shadow: 0 0 5px rgba(255,255,255,.8),0 0 5px rgba(255,255,255,.8),0 0 5px rgba(255,255,255,.8);
+        transition: .5s;
+    } 
+    .FooIconos .Fila2 .FooRedes .Circulos{
+        margin-left: auto;
+        margin-right: 0;
+        padding:3px 5px;
+    }
+    .FooIconos{
+        margin:auto;
+        z-index: 20;
+        overflow-y: auto;
+        right:-200px;
+        bottom:50px;
+        transition: right .5s;        
+    }
+    .FooMenuIconos{
+        display:block;
+    }    
+    .FooIconos_visible{
+        right: 0px;    
+    }    
+    .FooMenuIconos:focus:not(:focus-visible){
+        outline: none;
+    }
+}   

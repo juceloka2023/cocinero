@@ -1,0 +1,101 @@
+
+
+
+section {
+    height: 680px;
+    width: 680px;
+    background-color: black;
+ 
+}
+.cabeza {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #1ba1f2;
+    position: absolute;
+    right: 30%;
+    top: 19%;
+}
+.cuerpo-1 {
+    position: absolute;
+    right: 50%;
+    top: 17%;
+    width: 200px;
+    height: 340px;
+    border-radius: 50%;
+    box-shadow: 70px 10px 0 #1ba1f2;
+    transform: rotate(40deg) skewy(150deg);
+    z-index: 99;
+}
+.cuerpo-2 {
+    position: absolute;
+    right: 46%;
+    top: 17%;
+    width: 200px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 70px 10px 0 #1ba1f2;
+    transform: rotate(45deg) skewy(150deg);
+    z-index: 99;
+}
+.cuerpo-3 {
+    position: absolute;
+    right: 51%;
+    top: 15%;
+    width: 200px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 70px 10px 0 #1ba1f2;
+    transform: rotate(40deg) skewy(150deg);
+    z-index: 99;
+}
+.pico-1 {
+    width: 70px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 60px 0 #1ba1f2;
+    transform: rotate(30deg) skewy(320deg);
+    position: absolute;
+    right: 25%;
+    top: 13%;
+}
+.pico-2 {
+    width: 70px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 60px 0 #1ba1f2;
+    transform: rotate(40deg) skewy(320deg);
+    position: absolute;
+    right: 24%;
+    top: 18%;
+}
+.ala-1 {
+    width: 270px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0px 80px 0 #1ba1f2;
+    transform: rotate(-15deg) skewy(20deg);
+    position: absolute;
+    right: 40%;
+    top: 7%;
+}
+.ala-2 {
+    width: 270px;
+    height: 210px;
+    border-radius: 50%;
+    box-shadow: 0px 100px 0 #1ba1f2;
+    transform: rotate(-35deg) skewy(20deg);
+    position: absolute;
+    right: 43%;
+    top: 9%;
+}
+.ala-3 {
+    width: 180px;
+    height: 163px;
+    border-radius: 50%;
+    box-shadow: 0px 80px 0 #1ba1f2;
+    transform: rotate(-43deg) skewy(20deg);
+    position: absolute;
+    right: 51%;
+    top: 24%;
+}

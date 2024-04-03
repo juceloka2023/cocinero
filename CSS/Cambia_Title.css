@@ -1,0 +1,6 @@
+a[title]{ 
+    color: #900; 
+}
+a[title]::after, a[title]::before{ 
+    color: #900; 
+}

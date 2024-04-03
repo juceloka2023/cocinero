@@ -1,0 +1,186 @@
+.HeaConMenuPrimario{
+    position: relative;
+    width:100%;
+    padding-top:5px;
+    padding-bottom: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(0, 255, 255);
+    background-image: repeating-linear-gradient(72deg, transparent, transparent 10px, rgba(38, 87, 86, 0.75) 11px,
+        rgba(38, 87, 86, 0.25) 11px),
+        repeating-linear-gradient(144deg, transparent, transparent 10px, rgba(38, 87, 86, 0.75) 11px,
+        rgba(38, 87, 86, 0.25) 11px),
+        repeating-linear-gradient(216deg, transparent, transparent 10px, rgba(38, 87, 86, 0.75) 11px,
+        rgba(38, 87, 86, 0.25) 11px),
+        repeating-linear-gradient(288deg, transparent, transparent 10px, rgba(38, 87, 86, 0.75) 11px,
+        rgba(38, 87, 86, 0.25) 11px),
+        repeating-linear-gradient(360deg, transparent, transparent 10px, rgba(38, 87, 86, 0.75) 11px,
+        rgba(38, 87, 86, 0.25) 11px);
+}
+.HeaConMenu{
+    width:fit-content;
+    margin: 5px auto;
+    align-items: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.HeaConMenu ul{
+    display:flex;
+    flex-direction: row;
+    border:transparent 2px solid;
+    box-shadow: inset 0 0 5px 3px rgba(0, 0, 0,.8),0 0 5px 3px rgba(0, 0, 0,.8);
+    padding: 5px;
+    border-radius: 7px;
+    margin: 10px auto;
+    width: 100%;
+    align-items: center ;
+}
+.HeaConMenu ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    margin-top:7px;
+    margin-bottom:7px;
+    /*FONDO DEL BOTON*/
+    background-image: linear-gradient(to top, black,rgb(200,200,200));
+    /*SOMBRA DEL BOTON*/
+    box-shadow:5px 5px 5px rgba(0,0,0,1);
+}
+/**********************/
+/*Movimientos del menu*/
+/**********************/
+.HeaConMenu ul li:nth-of-type(1){
+    opacity: 0;
+    animation: BajaMenu1 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes BajaMenu1{
+    from{
+        transform:translatey(-30px);
+        opacity: 0;
+    }
+    to{
+        transform:translatey(0px);
+        opacity: 1;
+    }
+}
+.HeaConMenu ul li:nth-of-type(2){
+    opacity: 0;
+    animation: BajaMenu2 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes BajaMenu2{
+    from{
+        transform:translatey(-30px);
+        opacity: 0;
+    }
+    to{
+        transform:translatey(0px);
+        opacity: 1;
+    }
+}
+.HeaConMenu ul li:nth-of-type(3){
+    opacity: 0;
+    animation: BajaMenu3 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes BajaMenu3{
+    from{
+        transform:translatey(-30px);
+        opacity: 0;
+    }
+    to{
+        transform:translatey(0px);
+        opacity: 1;
+    }
+}
+.HeaConMenu ul li:nth-of-type(4){
+    opacity: 0;
+    animation: BajaMenu4 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes BajaMenu4{
+    from{
+        transform:translatey(-30px);
+        opacity: 0;
+    }
+    to{
+        transform:translatey(0px);
+        opacity: 1;
+    }
+}
+/***********************************************/
+.HeaConMenu ul li:hover{
+    /*FONDO DEL BOTON*/
+    background-image: linear-gradient(to top, black,rgb(200,200,200),black);
+    /*SOMBRA DEL BOTON*/
+    box-shadow:2.5px 2.5px 5px rgba(0,0,0,1);
+}
+.HeaConMenu ul li:active{
+    /*FONDO DEL BOTON*/
+    background-image: linear-gradient(to bottom, black,rgb(200,200,200));
+    /*SOMBRA DEL BOTON*/
+    box-shadow:0px 0px 0px rgba(0,0,0,1);
+}
+.HeaConMenu ul li a{
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-family: 'Electrolize', Regular;
+    font-size: 15px;
+    font-weight: 700;
+    color:white;
+    transition: .8s;
+}
+.HeaConMenu ul li a:hover{
+    color:rgb(255,255,100);
+    transition: .8s;
+}
+.HeaConMenu ul li a:active{
+    text-shadow: 0 0 5px rgba(255,255,100,.8);
+}
+.HeaBotMenu{
+    width:100px;
+    border:#000 1px double;
+    display:flex;
+    flex-direction:row;
+}
+
+/**********************************************************************************/
+/**********************************************************************************/
+/***     ****   *****   ***   ****    ***   *   *   ***   ***  *   *  *****     ***/
+/***     *   *  *      *      *   *  *   *  **  *  *       *   *   *  *         ***/
+/***     ****   ***     ***   ****   *   *  * * *   ***    *    * *   ***       ***/
+/***     * *    *          *  *      *   *  *  **      *   *    * *   *         ***/
+/***     *  *   *****   ***   *       ***   *   *   ***   ***    *    *****     ***/
+/**********************************************************************************/
+/**********************************************************************************/
+
+/************************************************************/
+/************************************************************/
+/*****     Cuando la resolución máxima es de 650px      *****/
+/************************************************************/
+/************************************************************/
+
+@media screen and (max-width:650px){
+    .HeaConMenuPrimario{
+        height:110px;
+    }
+    .HeaConMenu{
+        width: 250px;
+        height: 50px;
+    }    
+    .HeaConMenu ul{
+        width:100%;
+        display:flex;
+        flex-wrap: wrap;
+        align-content:stretch;
+    }
+}

@@ -1,0 +1,76 @@
+h1{
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(125, 255, 255), 0 0 0.2em rgb(125, 255, 255);
+    color: rgb(0, 225, 225);
+    animation: Escribir 5s infinite alternate;
+    animation-delay: 4s;
+} 
+@keyframes Escribir{
+    0%{
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(125, 255, 255), 0 0 0.2em rgb(125, 255, 255);
+        color: rgb(0, 225, 225);    
+    }
+    33%{
+        text-shadow: 1px 1px 2px  transparent, 0 0 1em  transparent, 0 0 0.2em transparent;
+        color: transparent;
+    }
+    100%{ 
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(125, 255, 255), 0 0 0.2em rgb(125, 255, 255);
+        color: rgb(0, 225, 225);    
+    }
+}
+.HeaConTituloPagina{
+    font-family: cursive;
+    font-size: 20px;
+    background-color: rgb(0, 0, 40);
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 50px,
+        rgba(0, 255, 251, 0.25) 50px, rgba(0, 255, 251, 0.25) 56px, transparent 56px, transparent 63px,
+        rgba(0, 255, 251, 0.25) 63px, rgba(0, 255, 251, 0.25) 69px, transparent 69px, transparent 116px,
+        rgba(0, 238, 255, 0.25) 116px, rgba(0, 238, 255, 0.25) 166px),
+    repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(0, 255, 251, 0.25) 50px,
+        rgba(0, 255, 251, 0.25) 56px, transparent 56px, transparent 63px, rgba(0, 255, 251, 0.25) 63px,
+        rgba(0, 255, 251, 0.25) 69px, transparent 69px, transparent 116px, rgba(0, 238, 255, 0.25) 116px,
+        rgba(0, 238, 255, 0.25) 166px),
+    repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(38, 87, 86, 0.25) 5px,
+        rgba(38, 87, 86, 0.25) 10px),
+    repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(38, 87, 86, 0.25) 5px,
+        rgba(38, 87, 86, 0.25) 10px);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+    border-image-width: auto ;
+    border-image-outset:0;
+    padding:5px 30px 5px 30px;
+    border-radius: 15px;
+    margin:10px auto;
+    position: relative;
+    width:fit-content;
+    /* letter-spacing: 2px; */
+    transform:scale(1.1,1);
+}
+/**********************************************************************************/
+/**********************************************************************************/
+/***     ****   *****   ***   ****    ***   *   *   ***   ***  *   *  *****     ***/
+/***     *   *  *      *      *   *  *   *  **  *  *       *   *   *  *         ***/
+/***     ****   ***     ***   ****   *   *  * * *   ***    *    * *   ***       ***/
+/***     * *    *          *  *      *   *  *  **      *   *    * *   *         ***/
+/***     *  *   *****   ***   *       ***   *   *   ***   ***    *    *****     ***/
+/**********************************************************************************/
+/**********************************************************************************/
+
+/************************************************************/
+/************************************************************/
+/*****     Cuando la resolución máxima es de 650px      *****/
+/************************************************************/
+/************************************************************/
+
+@media screen and (max-width:650px){
+    .HeaConTituloPagina{
+        border-radius: 1vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .HeaConTituloPagina h1{
+        font-size: 6vw; 
+    }    
+}

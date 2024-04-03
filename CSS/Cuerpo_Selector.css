@@ -1,0 +1,220 @@
+/**************************/
+/*Cuerpo de la pagina HTML*/
+/**************************/
+.CueConSelector{
+    width:100%;
+    max-width: 900px;
+    margin:auto;
+    overflow:hidden;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,.5);
+    position: relative;
+}
+.CueSelector{
+    display: flex;
+    width: 300%;
+    height:400px;
+    margin-left: -100%;
+}
+.CueConSelImagen{
+    width:100%;
+}
+.CueSliImagen{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    background-color: rgba(0,0,0,.5);
+    top:0;
+
+}
+.CueConSelBotonGrande_Derecha, 
+.CueConSelBotonGrande_Izquierda{
+    position: absolute;
+    top:0;
+    width:90px;
+    height: 400px;
+    margin:auto;
+    padding: auto;
+    position: absolute;
+    z-index:4;
+}
+.CueConSelBotonGrande_Izquierda{
+    background-image: linear-gradient(-90deg, transparent,rgba(255,255,255,.2) 70%, rgba(255,255,255,.7) 100%);
+    left:0;
+}
+/* .CueConSelBotonGrande_Izquierda:hover{
+    background-image: linear-gradient(-90deg, rgba(255,255,255,.2), rgba(255,255,255,1) 100%);
+} */
+.CueConSelBotonGrande_Derecha{
+    background-image: linear-gradient(90deg, transparent,rgba(255,255,255,.2) 70%, rgba(255,255,255,.7) 100%);
+    right:0;
+}
+/* .CueConSelBotonGrande_Derecha:hover{
+    background-image: linear-gradient(90deg, rgba(255,255,255,.2), rgba(255,255,255,1) 100%);
+} */
+.CueSelImaTitulo{
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: rgba(0,0,0,.2);
+    top:2%;
+    width:78%;
+    margin: auto 11% auto 11%;
+    height: 20%;
+    
+    padding: auto;
+    z-index:4;
+    /* transform: translateX(-50%); */
+    /* left:50%; */
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+}
+div a{
+    text-decoration-line: none;
+    color: rgba(0,0,0,.5);
+}
+.CueSelImaTitulo div{
+    font-family: Beau Rivage;
+    font-size: 40px;
+    font-weight:bolder;
+    text-shadow: 0 0 3px rgba(255,255,255,1);
+    margin: auto;
+    padding: auto;
+    text-decoration: none;
+    color: rgba(0,0,0,.5);
+    transform:scale(1.3,1);
+    visibility: visible;
+}
+.CueConSelBoton{
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /* background: rgba(255,255,255,.3); */
+    left:50%;
+    top:calc(50% - 30px) ;
+    transform: translateX(-50%);
+    /* font-size: 30px; */
+    font-weight: bold;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    border-radius: 50%;
+    cursor: pointer;
+    /* border: rgba(255, 0, 0, 0.5) 2px solid; */
+    /* box-shadow:0 -5px 3px 0 rgba(255,255,255,.7),0 5px 3px 0 rgba(0,0,0,.7),-5px 0 3px 0 rgba(125, 125, 125, 0.7),5px 0 3px 0 rgba(125, 125, 125,.7);,5px 0 0 0 rgba(255,255,255,.8) */
+}
+/* .CueConSelBoton:hover{
+    background: rgb(255,255,255);
+} */
+
+.CueConSelBoton_FlechaDerecha,
+.CueConSelBoton_FlechaIzquierda{
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    margin: Auto; 
+    /* box-shadow:0 -5px 3px 0 rgba(255,255,255,.7),0 5px 3px 0 rgba(0,0,0,.7),-5px 0 3px 0 rgba(125, 125, 125, 0.7); */
+
+}
+
+.CueConSelBoton_FlechaDerecha {
+    border-left: 30px solid rgba(255, 255, 255,0.2);
+    /* filter:drop-shadow(3px 0 8px rgba(255,0,0,1)); */
+}
+/* .CueConSelBoton_FlechaDerecha:hover{
+    border-left: 30px solid rgba(0, 0, 0,0.7);
+}
+.CueConSelBoton_FlechaIzquierda:hover{
+    border-right: 30px solid rgba(0, 0, 0,0.7);
+} */
+.CueConSelBoton_FlechaIzquierda {
+    border-right: 30px solid rgba(255, 255, 255,0.2);
+}
+
+/**********************************************************************************/
+/**********************************************************************************/
+/***     ****   *****   ***   ****    ***   *   *   ***   ***  *   *  *****     ***/
+/***     *   *  *      *      *   *  *   *  **  *  *       *   *   *  *         ***/
+/***     ****   ***     ***   ****   *   *  * * *   ***    *    * *   ***       ***/
+/***     * *    *          *  *      *   *  *  **      *   *    * *   *         ***/
+/***     *  *   *****   ***   *       ***   *   *   ***   ***    *    *****     ***/
+/**********************************************************************************/
+/**********************************************************************************/
+
+/*************************************************************/
+/*************************************************************/
+/*****     Cuando la resolución máxima es de 1000px      *****/
+/*************************************************************/
+/*************************************************************/
+@media screen and (max-width:1000px){  
+    /************************************/
+    /*****        ENCABEZADO        *****/
+    /************************************/
+    /* .CueSelector{
+        height:400px;
+    } */
+    /* .CueConSelBotonGrande_Derecha, .CueConSelBotonGrande_Izquierda{
+        width:90px;
+    }
+    ********************************** */
+    /*****          CUERPO          *****/
+    /************************************/
+    .CueConSelector{
+        max-width: 90vw;
+    }
+    .CueSelImaTitulo div{
+        font-size: 4vw;
+    }
+    div a{
+        color: rgba(0,0,0,.8);
+    }
+    /************************************/
+    /*****           PIE            *****/
+    /************************************/ 
+}
+/************************************************************/
+/************************************************************/
+/*****     Cuando la resolución máxima es de 650px      *****/
+/************************************************************/
+/************************************************************/
+@media screen and (max-width:650px){
+    /************************************/
+    /*****        ENCABEZADO        *****/
+    /************************************/
+    /************************************/
+    /*****          CUERPO          *****/
+    /************************************/
+    .CueSelector{
+        height: 61.5384615385vw;
+    }
+    .CueConSelBotonGrande_Derecha, 
+    .CueConSelBotonGrande_Izquierda{
+        width:13.8461538462vw;
+        height: 61.5384615385vw;
+    }
+    .CueConSelBoton{
+        width: 7.6923076923vw;
+        height: 7.6923076923vw;
+        top: calc(50% - 4.6153846154vw);
+        transform: translateX(-50%);
+    }
+    .CueConSelBoton_FlechaDerecha,
+    .CueConSelBoton_FlechaIzquierda{
+        border-top: 2.3076923077vw solid transparent;
+        border-bottom: 2.3076923077vw solid transparent;
+    }
+    .CueConSelBoton_FlechaDerecha {
+        border-left: 4.6153846154vw solid rgba(255, 255, 255,0.2);
+    }
+    .CueConSelBoton_FlechaIzquierda {
+        border-right: 4.6153846154vw solid rgba(255, 255, 255,0.2);
+    }
+
+    /************************************/
+    /*****           PIE            *****/
+    /************************************/ 
+}

@@ -1,0 +1,170 @@
+/**************************/
+/*Cuerpo de la pagina HTML*/
+/**************************/
+.CueConBotones_Atajos{
+    margin:15px auto 15px auto;
+    padding: 0%;
+    display: flex;
+    flex-wrap: nowrap ;
+    flex-direction: row;
+    border: cadetblue 2px solid;
+    width:950px;
+    height: 50px;
+    background-color: cadetblue;
+    border-radius: 30px;
+    vertical-align: middle;
+    align-items: center;
+    box-shadow: 
+    0 -5px 3px 0 rgba(255,255,255,.7) inset,
+    0 5px 3px 0 rgba(0,0,0,.7) inset,
+    -5px 0 3px 0 rgba(125, 125, 125, 0.7) inset,
+    5px 0 3px 0 rgba(125, 125, 125,.7) inset,
+    0 -5px 3px 0 rgba(255,255,255,.7),
+    0 5px 3px 0 rgba(0,0,0,.7),
+    -5px 0 3px 0 rgba(125, 125, 125, 0.7),
+    5px 0 3px 0 rgba(125, 125, 125,.7);
+}
+.a_Anterior{
+    left:10px;
+    right:auto;
+    margin-left: 10px;
+    margin-right: auto;
+}
+.a_Inicio{
+    left:auto;
+    margin-right: 10px;
+    margin-left: auto;
+    right:10px;
+}
+.CueBotones_Atajos{
+    font-family: 'Electrolize', Regular;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: cadetblue;
+    width:130px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    height: fit-content;
+    box-shadow:
+    0 -5px 3px 0 rgba(255,255,255,.7),
+    0 5px 3px 0 rgba(0,0,0,.7),
+    -5px 0 3px 0 rgba(125, 125, 125, 0.7),
+    5px 0 3px 0 rgba(125, 125, 125,.7);
+    text-decoration: none;
+    text-decoration-line: none;
+}
+.CueBotones_Atajos:hover{
+    box-shadow:
+    0 -2.5px 3px 0 rgba(255,255,255,.7),
+    0 2.5px 3px 0 rgba(0,0,0,.7),
+    -2.5px 0 3px 0 rgba(125, 125, 125, 0.7),
+    2.5px 0 3px 0 rgba(125, 125, 125,.7);
+    text-decoration: none;
+}
+.CueBotones_Atajos:active{
+    box-shadow:
+    0 0px 3px 0 rgba(255,255,255,.7),
+    0 0px 3px 0 rgba(0,0,0,.7),
+    0px 0 3px 0 rgba(125, 125, 125, 0.7),
+    0px 0 3px 0 rgba(125, 125, 125,.7);
+    text-decoration: none;
+}
+.CueBotones_Atajos:active{
+    color: white;
+    text-shadow:0 0 3px white;
+    transition: .3s;
+    transition-property: color;
+    text-decoration: none;
+}
+/**********************************************************************************/
+/**********************************************************************************/
+/***     ****   *****   ***   ****    ***   *   *   ***   ***  *   *  *****     ***/
+/***     *   *  *      *      *   *  *   *  **  *  *       *   *   *  *         ***/
+/***     ****   ***     ***   ****   *   *  * * *   ***    *    * *   ***       ***/
+/***     * *    *          *  *      *   *  *  **      *   *    * *   *         ***/
+/***     *  *   *****   ***   *       ***   *   *   ***   ***    *    *****     ***/
+/**********************************************************************************/
+/**********************************************************************************/
+
+/*************************************************************/
+/*************************************************************/
+/*****     Cuando la resolución máxima es de 1000px      *****/
+/*************************************************************/
+/*************************************************************/
+@media screen and (max-width:1000px){
+    /************************************/
+    /*****          CUERPO          *****/
+    /************************************/
+    .CueConBotones_Atajos{
+        width:95vw;
+
+    }
+} 
+/************************************************************/
+/************************************************************/
+/*****     Cuando la resolución máxima es de 650px      *****/
+/************************************************************/
+/************************************************************/
+@media screen and (max-width:650px){
+    /************************************/
+    /*****          CUERPO          *****/
+    /************************************/
+    /* .CueBotones_Atajos{
+        font-size: 3.0769230769vw;
+        width:20vw;
+    } */
+}
+/************************************************************/
+/************************************************************/
+/*****     Cuando la resolución máxima es de 500px      *****/
+/************************************************************/
+/************************************************************/
+@media screen and (max-width:500px){
+    /************************************/
+    /*****          CUERPO          *****/
+    /************************************/
+    .CueConBotones_Atajos{
+        height: 10vw;
+        border-radius: 6vw;
+        margin:3vw auto 3vw auto;
+        box-shadow: 
+        0 -1vw .6vw 0 rgba(255,255,255,.7) inset,
+        0 1vw .6vw 0 rgba(0,0,0,.7) inset,
+        -1vw 0 .6vw 0 rgba(125, 125, 125, 0.7) inset,
+        1vw 0 .6vw 0 rgba(125, 125, 125,.7) inset,
+        0 -1vw .6vw 0 rgba(255,255,255,.7),
+        0 1vw .6vw 0 rgba(0,0,0,.7),
+        -1vw 0 .6vw 0 rgba(125, 125, 125, 0.7),
+        1vw 0 .6vw 0 rgba(125, 125, 125,.7);
+    }
+    .CueBotones_Atajos{
+        font-size: 4vw;
+        width: 26vw;
+        padding: 1vw 2vw 1vw 2vw;
+        border-radius: 3vw;
+        box-shadow:
+        0 -1vw .6vw 0 rgba(255,255,255,.7),
+        0 1vw .6vw 0 rgba(0,0,0,.7),
+        -1vw 0 .6vw 0 rgba(125, 125, 125, 0.7),
+        1vw 0 .6vw 0 rgba(125, 125, 125,.7);
+    }
+    .CueBotones_Atajos:hover{
+        box-shadow:
+        0 -.5vw .6vw 0 rgba(255,255,255,.7),
+        0 .5vw .6vw 0 rgba(0,0,0,.7),
+        -.5vw 0 .6vw 0 rgba(125, 125, 125, 0.7),
+        .5vw 0 .6vw 0 rgba(125, 125, 125,.7);
+    }
+    .CueBotones_Atajos:active{
+        box-shadow:
+        0 0px .6vw 0 rgba(255,255,255,.7),
+        0 0px .6vw 0 rgba(0,0,0,.7),
+        0px 0 .6vw 0 rgba(125, 125, 125, 0.7),
+        0px 0 .6vw 0 rgba(125, 125, 125,.7);
+        text-shadow:0 0 .6vw white;
+        transition: .3s;
+        transition-property: color;
+    }
+
+}

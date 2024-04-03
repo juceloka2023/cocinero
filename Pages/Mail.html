@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de E-mail</title>
+        <!-- Peticion de tipos de letras llamadas localmente -->
+        <link rel="preconnect" href="../Fonts">
+        <link rel="preconnect" href="../Fonts" crossorigin>
+        <!-- Letra 1 -->
+        <link href="../Fonts/Satisfy-Regular.ttf" rel="stylesheet">
+        <style>
+            @font-face {
+                font-family:"Satisfy" ;
+                src: url("../Fonts/Satisfy-Regular.ttf");
+            }
+        </style>
+        <!-- Letra 2 -->
+        <link href="../Fonts/BeauRivage-Regular.ttf" rel="stylesheet">
+        <style>
+            @font-face {
+                font-family:"Beau Rivage";
+                src: url("../fonts/BeauRivage-Regular.ttf")
+            }
+        </style>
+        <!-- Letra 3 -->
+        <link href="../Fonts/Electrolize-Regular.ttf" rel="stylesheet">
+        <style>
+            @font-face {
+                font-family:"Electrolize";
+                src: url("../fonts/Electrolize-Regular.ttf")
+            }
+        </style>
+    
+        <!-- <link rel="stylesheet" href="css\index.css"> -->
+        <link rel="stylesheet" href="../CSS/Inicio_Selector_Postres.css">
+        <link rel="stylesheet" href="../css/Inicializacion_ECP_Selectores.css">
+        
+        <link rel="stylesheet" href="../css/Header_Titulo_Pagina.css">
+        <link rel="stylesheet" href="../css/Header_Menu.css">
+        
+        <link rel="stylesheet" href="../css/Luces_Neon.css">
+        <link rel="stylesheet" href="../css/Cuerpo_Atajos.css">
+ 
+        <link rel="stylesheet" href="../css/Mail_Cuerpo_Mensaje.css">
+
+ 
+ 
+ 
+ 
+        <!-- <link rel="stylesheet" href="../css/Cuerpo_Selector.css">
+        
+    
+        
+        <link rel="stylesheet" href="../css/Cuerpo_Contenedor_1.css">
+        <link rel="stylesheet" href="../css/Cuerpo_Foto.css">
+        <link rel="stylesheet" href="../css/Cuerpo_Titulo_Secundario.css"> -->
+    
+        <link rel="stylesheet" href="../CSS/Cuerpo_Titulo_Cabecera.css">
+    
+        <link rel="stylesheet" href="../css/Pie_AcercaDe.css">
+        <link rel="stylesheet" href="../css/Pie_RedesSociales.css">
+        
+        <!-- Llamado al procedimiento de JavaScript -->
+        <script defer src="../JScript/MenuDesp01.js"></script>
+        <script defer src="../JScript/Selector.js"></script>
+        <script defer src="../JScript/SelectorCasillasMail.js"></script>
+    
+</head>
+<body>
+    <header> <!-- Encabezado -->
+        <!-- Encabezado de Pagina -->
+        <div class="HeaConTituloPagina">
+            <h1>Cocinando con la familia</h1>
+        </div>
+        <!-- Menu -->
+        <div class="HeaConMenuPrimario">
+            <div class="HeaConMenu">
+                <ul>
+                    <li class="HeaBotMenu"><a href="../index.html">INICIO</a></li>
+                    <li class="HeaBotMenu"><a href="Selector_Platos.html">PLATOS</a></li>
+                    <li class="HeaBotMenu"><a href="Selector_Postres.html">POSTRES</a></li>
+                    <li class="HeaBotMenu"><a href="AcercaDe.html">ACERCA D</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Cuerpo -->
+    <section class="Cuerpo">
+        <div class="TituloCabecera">
+            <h2>
+                Envio de E-mail
+            </h2>
+        </div>
+        <Article class="CueConPrimario">
+            <form>
+                <div class="CueGruInput">
+                    <div class="CueConLabel">
+                        <label for="CueTitInpNombre" class="CueEtiTitulos">Nombre</label>
+                    </div>
+                    <input type="text" class="CueItem" name='CueNombre' id="CueNombre" placeholder="Nombre..." pattern="[A-Za-z]{1,60}">
+                    <label for=""class="CueEtiAvisoError" name="CueEtiAviNombreError" id="CueEtiAviNombreError"></label>
+                    <label for="" class="CueEtiAviso" name="CueEtiAviNombre" id="CueEtiAviNombre"></label>
+                </div>
+                <div class="CueGruInput">
+                    <div class="CueConLabel">
+                        <label for="CueTitInpApellido" class="CueEtiTitulos">Apellido</label>
+                    </div>
+                    <input type="text" class="CueItem" name='CueApellido' id="CueApellido" placeholder="Apellido...">
+                    <label for=""class="CueEtiAvisoError" name="CueEtiAviApellidoError" id="CueEtiAviApellidoError"></label>
+                    <label for=""class="CueEtiAviso"name="CueEtiAviApellido"id="CueEtiAviApellido"></label>
+                </div>
+                <div class="CueGruInput">
+                    <div class="CueConLabel">
+                        <label for="CueTitInpEmail" class="CueEtiTitulos">Email</label>
+                    </div>
+                    <input type="email" class="CueItem" name='CueEmail' id="CueEmail" placeholder="E-mail...">
+                    <label for=""class="CueEtiAvisoError" name="CueEtiAviEmailError" id="CueEtiAviEmailError"></label>
+                    <label for=""class="CueEtiAviso"name="CueEtiAviMail"id="CueEtiAviMail"></label>
+                </div>
+                <div class="CueGruInput">
+                    <div class="CueConLabel">
+                        <label for="CueTitInpCabecera" class="CueEtiTitulos">Encabezado</label>
+                    </div>
+                    <input type="text" class="CueItem" name='CueAsunto' id="CueAsunto" placeholder="Asunto...">
+                    <label for=""class="CueEtiAvisoError" name="CueEtiAviAsuntoError" id="CueEtiAviAsuntoError"></label>
+                    <label for=""class="CueEtiAviso"name="CueEtiAviAsunto"id="CueEtiAviAsunto"></label>
+                </div>
+                <div class="CueGruInput">
+                    <div class="CueConLabel">
+                        <label for="CueTitInpCuerpo" class="CueEtiTitulos">Mensaje</label>
+                    </div>
+                    <textarea class="CueItem" name='CueMensaje' id="CueMensaje" placeholder="Mensaje..." rows="5"></textarea>
+                    <label for=""class="CueEtiAvisoError" name="CueEtiAviMensajeError" id="CueEtiAviMensajeError"></label>
+                    <label for=""class="CueEtiAviso"name="CueEtiAviMensaje"id="CueEtiAviMensaje"></label>
+                </div>                
+                <div class="CueGruInput CueGruInputTerminos">
+                    <input type="checkbox" name="CueTerminos" id="CueTerminos" class="CueTerminos">
+                    <label for="CueTerminos" class="CueDesPolitica" name="CueDesPolitica" id="CueDesPolitica"></label>
+                    <label for="" Class="CueDesTerminosyCondiciones"><input type="button" value="Acepto los términos y condiciones" class="BotonTermyCond"></label>
+                </div>
+                <button class="Boton BotonPrimario" type="" id="BotonPrimario" name="BotonPrimario" disabled>Enviar</button>
+            </form>
+        </article>
+
+        <div class="CueConBotones_Atajos">
+            <a href="../index.html" class="a_Anterior">
+                <div class="CueBotones_Atajos">
+                    ANTERIOR
+                </div>
+            </a>
+            <a href="../index.html" class="a_Inicio">
+                <div class="CueBotones_Atajos">
+                    INICIO
+                </div>
+            </a> 
+        </div>        
+    </section>
+    <!-- Pie -->
+    <footer>
+        <!-- Izquierda del Fooder acerca de -->
+        <section class="FooAcercaDe">
+            <p>Copyright - Todos los derechos reservados</p> 
+            <p>Para contactar</p> 
+            <p>Por Mail: <a href="#">a1@mimail.com</a></p> 
+            <p>WhatsApp: <a href="#">11-1234-5678</a></p>
+        </section>
+        <!-- Boton Cuando la pantalla es chica -->
+        <button class="FooMenuIconos" aria-label="Abrir menú">
+            <div class="FooMenuBorders">
+                <p>RS</p>  
+            </div>
+            
+        </button>
+        
+        <!-- Derecha del Footer Titulo y redes sociales -->
+        <section class="FooIconos">
+            <div class="Fila1">
+                <p class="Titulo">Siganos en:</p>
+            </div>
+            <div class="Fila2">
+                <div class="FooRedes">
+                    <a class="TitRedes" href="#">Red Social 1</a> <a class="Circulos" href="#">1</a>
+                </div>
+                <div class="FooRedes">
+                    <a class="TitRedes" href="#">Red Social 2</a> <a class="Circulos" href="#">2</a>
+                </div>
+                <div class="FooRedes">
+                    <a class="TitRedes" href="#">Red Social 3</a> <a class="Circulos" href="#">3</a>
+                </div>
+                <div class="FooRedes">
+                    <a class="TitRedes" href="#">Red Social 4</a> <a class="Circulos" href="#">4</a>
+                </div>
+                <div class="FooRedes">
+                    <a class="TitRedes" href="#">Red Social 5</a> <a class="Circulos" href="#">5</a>
+                </div>
+                <div class="FooRedes">
+                    <a class="TitRedes" href="#">Red Social 6</a> <a class="Circulos" href="#">6</a>
+                </div>
+                <div class="FooRedes">
+                    <a class="TitRedes" href="#">Red Social 7</a> <a class="Circulos" href="#">7</a>
+                </div>
+            </div>                
+        </section>
+    </footer>    
+</body>
+</html>

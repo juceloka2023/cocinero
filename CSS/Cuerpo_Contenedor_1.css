@@ -1,0 +1,78 @@
+/**************************/
+/*Cuerpo de la pagina HTML*/
+/**************************/
+.CueConGenTexto_Inicio{
+    width:500px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 10px;
+    height:fit-content;
+    margin-bottom: 10px;
+    /* object-fit: cover; */
+    /* background-color: aqua; */
+}
+
+.CueConGenTexto{
+    width:500px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 10px;
+    height: 300px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    /* background-color: aqua; */
+}
+.CueConGenTexto2{
+    width:100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 10px;
+    height: fit-content;
+    margin-bottom: 10px;
+    /* background-color: aqua; */
+}
+/**********************************************************************************/
+/**********************************************************************************/
+/***     ****   *****   ***   ****    ***   *   *   ***   ***  *   *  *****     ***/
+/***     *   *  *      *      *   *  *   *  **  *  *       *   *   *  *         ***/
+/***     ****   ***     ***   ****   *   *  * * *   ***    *    * *   ***       ***/
+/***     * *    *          *  *      *   *  *  **      *   *    * *   *         ***/
+/***     *  *   *****   ***   *       ***   *   *   ***   ***    *    *****     ***/
+/**********************************************************************************/
+/**********************************************************************************/
+
+/*************************************************************/
+/*************************************************************/
+/*****     Cuando la resolución máxima es de 1000px      *****/
+/*************************************************************/
+/*************************************************************/
+@media screen and (max-width:1000px){
+    /************************************/
+    /*****          CUERPO          *****/
+    /************************************/ 
+    .CueConGenTexto{
+        margin:auto auto 10px auto;
+        height: fit-content;
+        width:520px;
+        object-fit: contain;
+        box-sizing:border-box;
+        flex-wrap: wrap;
+    }
+    .CueConGenTexto2{    
+        margin:auto auto auto auto;
+        width:520px;
+    }
+}  
+/************************************************************/
+/************************************************************/
+/*****     Cuando la resolución máxima es de 650px      *****/
+/************************************************************/
+/************************************************************/
+@media screen and (max-width:650px){
+    /************************************/
+    /*****          CUERPO          *****/
+    /************************************/ 
+    .CueConGenTexto, .CueConGenTexto_Inicio, .CueConGenTexto2{
+        width:80vw;
+    }
+}

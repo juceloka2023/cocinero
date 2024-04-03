@@ -1,0 +1,169 @@
+/**************************/
+/*Cuerpo de la pagina HTML*/
+/**************************/
+.CueConTitulo{   
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 100%;
+    align-content: center;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.75) , rgba(255,255,255,.75) 50%,rgba(0,0,0,.75) 100% );
+    /* animation: Cartel-Titulo-Recetas 5s infinite alternate ; */
+    margin-bottom: 10px;
+}
+.CueConTitulo h2{
+    width:fit-content;
+    font-family: Beau Rivage;
+    font-size: 40px;
+    margin: auto;
+    font-weight:bolder;
+    text-shadow:0px 0px 2px rgb(255, 255, 255);
+    /* animation: Cartel-Titulo-Recetas 5s infinite alternate steps(2); */
+    transform:scale(1.8,1)  
+}
+
+.CueAdeConTitulo{
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 100%;
+    align-content: center;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.75) , rgba(255,255,255,.75) 50%,rgba(0,0,0,.75) 100% );
+    margin-bottom: 10px;
+
+}
+
+
+.CueAdeConTitulo h2{
+    width:fit-content;
+    font-family: Beau Rivage;
+    font-size: 30px;
+    margin: auto;
+    font-weight:bolder;
+    text-shadow:0px 0px 2px rgb(255, 255, 255);
+
+}
+
+.CueConResenia_Inicio{
+    width:auto;
+    height:fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: repeating-linear-gradient(0deg,rgba(125, 125, 125,0.50),rgba(125, 125, 125,0.50) 50px, rgba(147, 143, 255,0.50) 51px,
+    rgba(147, 143, 255,0.50) 55px,rgba(255, 143, 143, 0.5) 56px,rgba(255, 143, 143, 0.5) 60px),
+    repeating-linear-gradient(90deg,rgba(125, 125, 125,0.50),rgba(125, 125, 125,0.50) 50px, rgba(147, 143, 255,0.50) 51px,
+    rgba(147, 143, 255,0.50) 55px,rgba(255, 143, 143, 0.5) 56px,rgba(255, 143, 143, 0.5) 60px);
+    overflow-y:auto;
+
+}
+
+
+
+.CueConResenia{
+    width:auto;
+    height:206px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: repeating-linear-gradient(0deg,rgba(125, 125, 125,0.50),rgba(125, 125, 125,0.50) 50px, rgba(147, 143, 255,0.50) 51px,
+    rgba(147, 143, 255,0.50) 55px,rgba(255, 143, 143, 0.5) 56px,rgba(255, 143, 143, 0.5) 60px),
+    repeating-linear-gradient(90deg,rgba(125, 125, 125,0.50),rgba(125, 125, 125,0.50) 50px, rgba(147, 143, 255,0.50) 51px,
+    rgba(147, 143, 255,0.50) 55px,rgba(255, 143, 143, 0.5) 56px,rgba(255, 143, 143, 0.5) 60px);
+    overflow-y:auto;
+    overflow-x: hidden;
+
+}
+.CueConResenia2{
+    width:fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: repeating-linear-gradient(0deg,rgba(125, 125, 125,0.50),rgba(125, 125, 125,0.50) 50px, rgba(147, 143, 255,0.50) 51px,
+    rgba(147, 143, 255,0.50) 55px,rgba(255, 143, 143, 0.5) 56px,rgba(255, 143, 143, 0.5) 60px),
+    repeating-linear-gradient(90deg,rgba(125, 125, 125,0.50),rgba(125, 125, 125,0.50) 50px, rgba(147, 143, 255,0.50) 51px,
+    rgba(147, 143, 255,0.50) 55px,rgba(255, 143, 143, 0.5) 56px,rgba(255, 143, 143, 0.5) 60px);
+}
+
+.CueConResenia p, .CueConResenia_Inicio p,.CueConResenia ul li, .CueConResenia_Inicio ul li, .CueConResenia2 p{ 
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    text-align: justify;
+    line-height:17px;
+    margin-bottom: 12px;
+    color:rgba(255,255,255,1);
+    text-shadow:0px 0px 2px rgb(0, 0, 0),  2px 3px 5px rgba(0,0,0,.75);
+
+}
+
+.CueConResenia ul li,.CueConResenia_Inicio ul li{
+    /* width: fit-content; */
+    margin-left:10px;
+    margin-right: 10px;
+    line-height: 20px;
+    list-style-position: inside;
+    margin-top:0px;
+    margin-bottom:0px ;
+    /* background-color: blue; */
+}
+
+h4{
+    font-family: Beau Rivage;
+    font-size: 25px;
+    color:rgba(150,255,255,1);
+    margin-bottom:10px;
+    text-shadow:0px 0px 2px rgb(0, 0, 0),  2px 3px 5px rgba(0, 0, 0, 0.75);
+    transform: scale(1.3,1);
+    text-decoration: underline;
+}
+/**********************************************************************************/
+/**********************************************************************************/
+/***     ****   *****   ***   ****    ***   *   *   ***   ***  *   *  *****     ***/
+/***     *   *  *      *      *   *  *   *  **  *  *       *   *   *  *         ***/
+/***     ****   ***     ***   ****   *   *  * * *   ***    *    * *   ***       ***/
+/***     * *    *          *  *      *   *  *  **      *   *    * *   *         ***/
+/***     *  *   *****   ***   *       ***   *   *   ***   ***    *    *****     ***/
+/**********************************************************************************/
+/**********************************************************************************/
+/*************************************************************/
+/*************************************************************/
+/*****     Cuando la resolución máxima es de 1000px      *****/
+/*************************************************************/
+/*************************************************************/
+@media screen and (max-width:1000px){
+    .CueConResenia{
+        height: fit-content;
+        background-size: cover;
+        width:100%;
+    }
+}
+
+/************************************************************/
+/************************************************************/
+/*****     Cuando la resolución máxima es de 650px      *****/
+/************************************************************/
+/************************************************************/
+@media screen and (max-width:650px){
+    /************************************/
+    /*****          CUERPO          *****/
+    /************************************/
+    .CueConTitulo h2, .CueConTitulo2 h2{
+        font-size: 6.1538461538vw;
+    }
+    .CueConResenia, .CueConResenia_Inicio, .CueConResenia2{
+        width:100% /*76.9230769231vw*/;
+        box-sizing:border-box;
+        flex-wrap: wrap
+    }
+    .CueConResenia p, .CueConResenia_Inicio p,.CueConResenia ul li,.CueConResenia_Inicio ul li, .CueConResenia2 p{
+        font-size: calc(3.0769230769vw /.8);
+        line-height: 3.0769230769vw;
+        margin-bottom: 1.8461538462vw;
+
+        
+    }
+    .CueConResenia ul li, .CueConResenia_Inicio ul li{
+        line-height: 3.0769230769vw;
+        margin-bottom:0px;
+    }
+    h4{
+        font-family: Beau Rivage;
+        font-size: 3.8461538462vw/*25px*/;
+        transform: scale(1.3,1);
+    }
+} 
