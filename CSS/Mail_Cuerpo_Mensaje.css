@@ -4,7 +4,7 @@ form{
     align-items: center;
     padding: 0;
     box-sizing:border-box;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .CueGruInput{
@@ -92,7 +92,9 @@ form{
     padding: 5px 10px;
     border-radius: 20px;
     transition-duration: .3s;
-    transition-property: left background-color;
+    /* transition-property: left background-color; */
+    transition-property: left;
+
     width:100%;
     outline: none;
     margin:10px 0 15px 0;
