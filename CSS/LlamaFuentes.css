@@ -1,12 +1,12 @@
 @font-face {
-    font-family:"Satisfy" ;
+    font-family:'Satisfy' ;
     src: url("fonts/Satisfy-Regular.ttf");
 }
 @font-face {
-    font-family:"Beau Rivage";
+    font-family:'Beau Rivage';
     src:url("fonts/BeauRivage-Regular.ttf");
 }
 @font-face {
-    font-family:"Electrolize";
+    font-family:'Electrolize';
     src:url("fonts/Electrolize-Regular.ttf");
 }
